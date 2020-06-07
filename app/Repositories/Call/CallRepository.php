@@ -125,7 +125,7 @@ class CallRepository implements CallRepositoryInterface
             $normalCall = $this->call->getNormalCall();
             DB::beginTransaction();
             try {
-                $this->assignCallToEmployee($urgentCall, $employee);
+                $this->assignCallToEmployee($normalCall, $employee);
                 DB::commit();
             } catch (Exception $ex) {
                 DB::rollback();
