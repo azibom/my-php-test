@@ -113,23 +113,23 @@ interface CallTypesRepositoryInterface {
 
 If you want to use or test it you can call this tree routes
 ## http://127.0.0.1/api/employee/want
-parametres
-id -> which is employee id
+### Parametres
+#### id -> Which is employee id
 
 
 ## http://127.0.0.1/api/employee/add
-parametres
-priority -> that is priority
+### Parametres
+#### priority -> That is priority
 
 
 ## http://127.0.0.1/api/call/done
-parametres
-hash -> that is the hash of the call
+### Parametres
+#### hash -> That is the hash of the call
 
 
 ## http://127.0.0.1/api/call/add
-parametres
-type -> "urgent" of "normal"
-hash -> that is call hash
+### Parametres
+#### type -> "urgent" of "normal"
+#### hash -> That is call hash
 
-for env you can easy use https://github.com/cmohammadc/ENV-php-nginx-mariadb-phpmyadmin-varnish
+For env you can easy use https://github.com/cmohammadc/ENV-php-nginx-mariadb-phpmyadmin-varnish
