@@ -15,11 +15,11 @@ class CreateCallsTable extends Migration
     {
         Schema::create('calls', function (Blueprint $table) {
             $table->id();
+            $table->bigInteger('employee_id')->unsigned()->nullable();
+            $table->foreign('employee_id')->references('id')->on('employees');
             $table->string('hash');
             $table->enum('priority', ['high', 'low']);
             $table->enum('state', ['waiting', 'doing', 'done']);
-            $table->unsignedBigInteger('responsible_id');
-            $table->foreign('responsible_id')->references('id')->on('users');
             $table->timestamps();
         });
     }
