@@ -1,6 +1,7 @@
 
 # my-php-test
 my-php-test
+### This is just a skill testing project :sunglasses:
 
 
 ## How does it work ...
