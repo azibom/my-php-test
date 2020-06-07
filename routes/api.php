@@ -14,6 +14,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::middleware('auth:api')->get('/user', function (Request $request) {
-    return $request->user();
+Route::prefix('call')->group(function () {
+    Route::post('add', 'CallController@newCall');
+    Route::post('done', 'CallController@endOfTheCall');
+});
+
+Route::prefix('employee')->group(function () {
+    Route::post('want', 'CallController@newCallWant');
+    Route::post('add', 'CallController@newEmployee');
 });
