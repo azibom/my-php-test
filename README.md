@@ -2,6 +2,17 @@
 # my-php-test
 my-php-test
 
+
+## How does it work ...
+
+#### First you need to make some employees
+
+#### Then you can add calls, if you add normal call application waits for someone want who call "employee/want" but if you add urgent call application tries to assign it and if application cant, it wait for the first employee that done the call
+
+#### If You call "call/want", application try to assign employee a normal call
+
+#### If you call "call/done", application asign you a new urgent call if we have urgent call 
+
 # Router
 ```php
 Route::prefix('call')->group(function () {
@@ -133,3 +144,5 @@ If you want to use or test it you can call this tree routes
 #### hash -> That is call hash
 
 For env you can easy use https://github.com/cmohammadc/ENV-php-nginx-mariadb-phpmyadmin-varnish
+
+
